@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+};
+body{
+    background-color: antiquewhite;
+}
+
+.contenedor{
+    margin:auto;
+    margin-top: 60px;
+
+    background-color: salmon;
+    width: 300px;
+    height: 420px;
+
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto ;
+
+    border-radius: 15px;
+
+    gap:10px;
+    padding: 30px;
+
+    box-shadow: inset -9px -8px 12px 9px #e95a5a;
+
+
+}
+
+.pantalla{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    grid-area: 1/1/2/3;
+    background-color: rgb(19, 68, 83);
+    color: rgb(17, 93, 116);
+    border: #f1f6ff solid;
+
+
+    padding: 15px;
+    border-radius: 15px;
+
+    height: 80px;
+}
+#mini-operacion{
+    margin: 0;
+}
+#resultado{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    
+    align-items: flex-end;
+}
+
+.botonEncender{
+    grid-area: 2/1/2/3;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.apagar{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    box-shadow: -1px 0px 12px 4px #e95a5a;
+
+
+}
+.numeros{
+    
+    grid-area: 3/1/4/2;
+   /* background-color: rgba(168, 4, 4, 0.764);*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    align-content: space-evenly;
+    justify-content: space-evenly;
+
+    place-items: center;
+    border-radius: 10px;
+
+    padding: 5px;
+    gap:5px;
+
+}
+
+.num1,.num2,.num3,.num4,.num5,.num6,.num7,.num8,.num9,.num0,.igual{
+    width: 50px;
+    height: 50px;
+
+    font-size: 20px;
+    color: rgb(240, 39, 109);
+
+    border-radius: 15px;
+    background-color: blanchedalmond;
+
+    display: grid;
+    place-items: center;
+    box-shadow: -1px 0px 10px 4px #e95a5a;
+
+}
+
+.operadores{
+    grid-area: 3/2/4/3;
+    display: grid;
+    align-content: space-evenly;
+    justify-content: end;
+}
+
+.div,.por,.menos,.mas,.limpiar{
+    width: 50px;
+    height: 50px;
+
+    font-size: 20px;
+    color: rgb(1, 8, 11);
+    border-radius: 15px;
+    background-color: blanchedalmond;
+
+    display: grid;
+    place-items: center;
+
+    box-shadow: -1px 0px 12px 4px #e95a5a;
+
+}
+
+.igual,.limpiar{
+    color: rgb(240, 96, 39);
+
+}
+button{
+    border-color:white;
+}
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#21021b;
+    color: white;
+    text-align: center;
+ }

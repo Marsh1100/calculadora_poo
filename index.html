@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Calculadora</title>
+
+</head>
+<body>
+
+    <div class="contenedor">
+        <div id="pantalla" class="pantalla">
+            <p id="mini-operacion">0</p>
+            <p id="resultado">Calculadora:3</p>
+        </div>
+        <div class="botonEncender">
+            <button id="apagar-cal" class="apagar">O</button>
+        </div>
+        
+        <div class="numeros">
+            <button id="num7" class="num7" value="7">7</button>
+            <button id="num8" class="num8" value="8">8</button>
+            <button id="num9" class="num9" value="9">9</button>
+            <button id="num4" class="num4" value="4">4</button>
+            <button id="num5" class="num5" value="5">5</button>
+            <button id="num6" class="num6" value="6">6</button>
+            <button id="num1" class="num1" value="1">1</button>
+            <button id="num2" class="num2" value="2">2</button>
+            <button id="num3" class="num3" value="3">3</button>
+            <button id="all-clear" class="limpiar">AC</button>
+            <button id="num0" class="num0">0</button>
+            <button id="signo-igual" class="igual">=</button>
+        </div>
+        
+        <div class="operadores">
+            <button id="signo-div" class="div">÷</button>
+            <button id="signo-por" class="por">x</button>
+            <button id="signo-menos" class="menos">-</button>
+            <button id="signo-mas" class="mas">+</button>
+        </div>
+        
+    </div>
+    
+
+    <footer> ©Margie Bocanegra</footer>
+    <!--JavaScript-->
+    <script src="calculator.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--SweetAlert2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
